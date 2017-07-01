@@ -5,231 +5,210 @@
 	//border: 1px solid red;
 }
 
-html {
-	margin: 0;
+.fxmarkets-container {
+	width: 100%;
 	padding: 0;
-}
-
-body {
 	margin:0;
-	padding:0;
 }
+.fxmarkets {
 
-ul {
-	list-style-type: none;
-}
-
-
-
-
-.main-menu {
-
-	a {
-		text-decoration:none;
-		color: #fff;
-		display: block;
-		padding: 10px;
-
-		&:hover {
-			text-decoration:none;
-			color: #fff;
-		}
-	}
-
+	background: #333;
+	height: 600px;
 	width:100%;
 	padding: 0;
 	margin: 0;
-	position: relative;
-
-	.background-image {
-
-		position: relative;
-		padding: 0;
-		height: 100vh;
-		overflow: hidden;
-
-		.row {
-
-			position: absolute;
-			top: 50%;
-			left:0;
-			width: 100%;
-			margin: 0;
-			padding: 0;
-
-			p {
-				color: #fff;
-				text-align: center;
-			}
-
-			h2 {
-				color: #fff;
-				text-align: center;
-				font-size: 24px;
-			}
-
-		}
-		
-
-		img {
-			width: 100%;
-			min-width: 1100px;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-		    transform: translate(-50%, -50%);
-
-		}
-
-		
-
+	@include maxMQ($md-max-width) {
+		height: 750px;
 	}
 
-	.top-nav-bar {
-		position: absolute;
-		top:0;
-		left: 0;
-		margin:0;
+	
 
-		select {
-			//-webkit-appearance: none; 
-			//-moz-appearance: none;
-			//appearance: none;       /* remove default arrow */
-			background-image: url(...); 
-			background-color: rgba(255,255,255,0);
-			border: 1px solid #fff;
-			border-radius: none;
-			width: 100px;
-			height: 25px;
+		.title {
+
 			text-align: center;
-			margin-bottom: 3px;
-		}
-		
 
-		li:nth-child(2) {
-			@include maxMQ($md-max-width) {
-				float:left;
-			}
-		}
-
-		ul {
-			li:not(:first-child) {
-				&:hover {
-					cursor: pointer;
-					border-bottom: 3px solid #fff;
-					background-color: rgba(255, 255, 255, 0.3);
+			h1 {
+				display: inline-block;
+				width: 280px;
+				font-size: 24px;
+				font-weight: 400;
+				margin: 70px 0;
+				color: #fff;
+				@include maxMQ($sm-max-width) {
+					width: 260px;
+					font-size: 22px;
 				}
 			}
 		}
-		
-	}
 
-	.bottom-nav-bar {
-		position: absolute;
-		top:67px;
-		left: 0;
-		margin:0;
-		
-
-		.menu-items-list-container {
-
-			display: block;
-
-			@include maxMQ($md-max-width) {
-				display: none;
-				position: fixed;
-			}
-
-			.menu-items-list {
-				@include maxMQ($md-max-width) {
-					height: 80vh;
-					overflow: hidden;
-					overflow-y: scroll;
-					padding-right: 10px;
-				}
-
-				.menu-item {
-					padding: 10px;
-					&:hover {
-						cursor: pointer;
-						border-bottom: 3px solid #fff;
-						background-color: rgba(255, 255, 255, 0.3);
-					}
-					@include maxMQ($md-max-width) {
-						float: none;
-					}
-				}
-			}
-
-		}
-
-		.hamburger-list {
-			
-			
-			display: none;
-			@include maxMQ($md-max-width) {
-				display: block;
-			}
-			
+		.picture-col {
+			text-align: center;
+			padding: 0;
 
 			img {
-				width: 25px;
-				height: 17px;
-				margin-bottom: 2px;
+				width: 90px;
+				height: 79px;
+				margin-top: 30px;
 			}
 
+			h3 {
+				margin: 0;
+				width: 130px;
+				font-size: 14px;
+				font-weight: 300;
+				margin-top: 20px;
+				display: inline-block;
+				color: #fff;
+			}
+		}
+}
+
+.superior-trading {
+	background: $footer-dark-grey;
+	height: 480px;
+
+	@include maxMQ($md-max-width) {
+		height: 700px;
+	}
+
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	.main-row {
+		height: 100%;
+	}
+
+	.left-column {
+
+		height: 100%;
+		
+
+		@include maxMQ($md-max-width) {
+			height: 50%;
+			text-align: center;
 		}
 
-		.hamburger-list li { //for the hamburger
-			float: left;
+		h1 {
+			margin-left: 40px;
+			margin-right: 60px;
+			margin-top: 160px;
+			color: #fff;
+			font-size: 24px;
+			font-weight: 400;
+			display: inline-block;
+
+			@include maxMQ($md-max-width) {
+				display: inline-block;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 100px;
+				text-align: center;
+			}
 			
+		}
+
+		p {
+			margin-left: 40px;
+			margin-right: 60px;
+			margin-top: 5px;
+			color: #fff;
+			font-weight: 400;
+
+			@include maxMQ($md-max-width) {
+				text-align: center;
+				margin-left: 50px;
+				margin-right: 50px;
+			}
 		}
 		
 	}
 
-	.dropdown {
+	.right-column {
 
-		display: none;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: #333;
+		height: 100%;
+
+		@include maxMQ($md-max-width) {
+			height: 50%;
+		}
+
 		
-		.dropdown-list {
-			float: left;
-			margin: 0;
-			padding: 0;
-			margin-top: 10px;
-			margin-right: 25px;
-			margin-bottom: 15px;
-			.dropdown-list-menu-item {
-				float: none;
-				color: #666;
-				margin: 0;
-				padding: 10px;
-				min-width: 170px;
 
-				&:hover {
-					background-color: #717171;
-					color: #fff;
-					border-left: 3px solid #fff;
+		.right-column-row {
+			height: 100%;
+
+			
+		}
+
+		.right-column-row-column {
+			height: 100%;
+			padding: 0;
+			margin:0;
+
+			h1:first-of-type {
+				margin-top: 157px;
+
+				@include maxMQ($md-max-width) {
+					margin-top: 52px;
 				}
 			}
 
+			h1	{
+				color: #fff;
+				font-size: 15px;
+				width:70%;
+				font-weight: 500;
+				margin-left: 30%;
+				margin-top: 63px;
+			}
+
+			
 		}
-	}
 
-	ul {
+		
 
-		@include clearFix;	
-		margin: 10px;
-		padding: 0;
-		color: #fff;
-	}
+		.icons-column {
+			display: inline-block;
+			width: 60px;
+			height: 100%;
+			margin-left: 0;
+			background: $superior-trading-light-grey;
+			float: left;
+			@include maxMQ($md-max-width) {
+				width: 50px;
+			}
 
-	li {
-		float:right;
-		padding: 0;
-		margin: 0 10px;
+			img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				width: 25px;
+				height: 25px;
+			}
+
+			img:first-child {
+				margin-top: 155px;
+
+				@include maxMQ($md-max-width) {
+					margin-top: 48px;;
+				}
+			}
+
+			img:not(:first-child) {
+				margin-top: 60px;
+			}
+
+			
+		}
+
 	}
 }
+
+
+
+
+
+
+
+
+

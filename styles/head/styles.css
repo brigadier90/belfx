@@ -1,0 +1,146 @@
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+.main-menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative; }
+  .main-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px; }
+    .main-menu a:hover {
+      text-decoration: none;
+      color: #fff; }
+  .main-menu .background-image {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; }
+    .main-menu .background-image .row {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .main-menu .background-image .row p {
+        color: #fff;
+        text-align: center; }
+      .main-menu .background-image .row h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 24px; }
+    .main-menu .background-image img {
+      width: 100%;
+      min-width: 1100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .main-menu .top-nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0; }
+    .main-menu .top-nav-bar select {
+      background-image: url(...);
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid #fff;
+      border-radius: none;
+      width: 100px;
+      height: 25px;
+      text-align: center;
+      margin-bottom: 3px; }
+    @media screen and (max-width: 991px) {
+      .main-menu .top-nav-bar li:nth-child(2) {
+        float: left; } }
+    .main-menu .top-nav-bar ul li:not(:first-child):hover {
+      cursor: pointer;
+      border-bottom: 3px solid #fff;
+      background-color: rgba(255, 255, 255, 0.3); }
+  .main-menu .bottom-nav-bar {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    margin: 0;
+    z-index: 1; }
+    .main-menu .bottom-nav-bar .menu-items-list-container {
+      display: block; }
+      @media screen and (max-width: 991px) {
+        .main-menu .bottom-nav-bar .menu-items-list-container {
+          display: none;
+          position: fixed; } }
+      @media screen and (max-width: 991px) {
+        .main-menu .bottom-nav-bar .menu-items-list-container .menu-items-list {
+          height: 80vh;
+          overflow: hidden;
+          overflow-y: scroll;
+          padding-right: 10px; } }
+      .main-menu .bottom-nav-bar .menu-items-list-container .menu-items-list .menu-item {
+        padding: 10px; }
+        .main-menu .bottom-nav-bar .menu-items-list-container .menu-items-list .menu-item:hover {
+          cursor: pointer;
+          border-bottom: 3px solid #fff;
+          background-color: rgba(255, 255, 255, 0.3); }
+        @media screen and (max-width: 991px) {
+          .main-menu .bottom-nav-bar .menu-items-list-container .menu-items-list .menu-item {
+            float: none; } }
+    .main-menu .bottom-nav-bar .hamburger-list {
+      display: none; }
+      @media screen and (max-width: 991px) {
+        .main-menu .bottom-nav-bar .hamburger-list {
+          display: block; } }
+      .main-menu .bottom-nav-bar .hamburger-list img {
+        width: 25px;
+        height: 17px;
+        margin-bottom: 2px; }
+    .main-menu .bottom-nav-bar .hamburger-list li {
+      float: left; }
+  .main-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333; }
+    .main-menu .dropdown .dropdown-list {
+      float: left;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      margin-right: 25px;
+      margin-bottom: 15px; }
+      .main-menu .dropdown .dropdown-list .dropdown-list-menu-item {
+        float: none;
+        color: #666;
+        margin: 0;
+        padding: 10px;
+        min-width: 170px; }
+        .main-menu .dropdown .dropdown-list .dropdown-list-menu-item:hover {
+          background-color: #717171;
+          color: #fff;
+          border-left: 3px solid #fff; }
+  .main-menu ul {
+    margin: 10px;
+    padding: 0;
+    color: #fff; }
+    .main-menu ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+  .main-menu li {
+    float: right;
+    padding: 0;
+    margin: 0 10px; }
+
+/*# sourceMappingURL=styles.css.map */
