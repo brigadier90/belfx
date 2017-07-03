@@ -5,18 +5,12 @@
 	//border: 1px solid red;
 }
 
-.fxmarkets-container {
-	width: 100%;
-	padding: 0;
-	margin:0;
-}
+
 .fxmarkets {
 
 	background: #333;
 	height: 600px;
-	width:100%;
-	padding: 0;
-	margin: 0;
+
 	@include maxMQ($md-max-width) {
 		height: 750px;
 	}
@@ -65,60 +59,43 @@
 
 .superior-trading {
 	background: $footer-dark-grey;
-	height: 480px;
-
-	@include maxMQ($md-max-width) {
-		height: 700px;
-	}
-
-	width: 100%;
-	margin: 0;
-	padding: 0;
-
-	.main-row {
-		height: 100%;
-	}
 
 	.left-column {
 
-		height: 100%;
 		
 
 		@include maxMQ($md-max-width) {
-			height: 50%;
 			text-align: center;
 		}
 
 		h1 {
-			margin-left: 40px;
-			margin-right: 60px;
-			margin-top: 160px;
+			margin-left: 30px;
+			margin-top: 140px;
 			color: #fff;
 			font-size: 24px;
 			font-weight: 400;
-			display: inline-block;
 
 			@include maxMQ($md-max-width) {
-				display: inline-block;
-				margin-right: auto;
 				margin-left: auto;
-				margin-top: 100px;
 				text-align: center;
+				margin-top: 100px;
 			}
 			
 		}
 
 		p {
-			margin-left: 40px;
-			margin-right: 60px;
+			margin-left: 30px;
 			margin-top: 5px;
+			margin-bottom: 140px;
 			color: #fff;
 			font-weight: 400;
+			width: 300px;
 
 			@include maxMQ($md-max-width) {
+				width: auto;
 				text-align: center;
-				margin-left: 50px;
-				margin-right: 50px;
+				margin-left: auto;
+				margin-bottom: 100px;
 			}
 		}
 		
@@ -126,31 +103,29 @@
 
 	.right-column {
 
-		height: 100%;
-
-		@include maxMQ($md-max-width) {
-			height: 50%;
-		}
-
-		
-
-		.right-column-row {
-			height: 100%;
-
-			
-		}
 
 		.right-column-row-column {
-			height: 100%;
 			padding: 0;
 			margin:0;
 
 			h1:first-of-type {
-				margin-top: 157px;
+				margin-top: 143px;
 
 				@include maxMQ($md-max-width) {
-					margin-top: 52px;
+					margin-top: 53px;
 				}
+
+				@include maxMQ(576px) {
+					margin-top: 58px;
+				}
+
+				@include maxMQ(400px) {
+					margin-top: 60px;
+				}
+
+
+
+
 			}
 
 			h1	{
@@ -160,6 +135,24 @@
 				font-weight: 500;
 				margin-left: 30%;
 				margin-top: 63px;
+
+				@include maxMQ(576px) {
+					font-size: 13px;
+					width:80%;
+					margin-left: 20%;
+				}
+
+				@include maxMQ(576px) {
+					margin-top: 61px;
+				}
+
+				@include maxMQ(400px) {
+					margin-top: 64px;
+					font-size: 12px;
+					font-weight: lighter;
+					width:74%;
+					margin-left: 26%;
+				}
 			}
 
 			
@@ -170,12 +163,18 @@
 		.icons-column {
 			display: inline-block;
 			width: 60px;
-			height: 100%;
+			height: 410px;
 			margin-left: 0;
 			background: $superior-trading-light-grey;
 			float: left;
 			@include maxMQ($md-max-width) {
 				width: 50px;
+				height: 300px;
+			}
+
+			@include maxMQ(576px) {
+				width: 30px;
+				height: 300px;
 			}
 
 			img {
@@ -184,18 +183,31 @@
 				display: block;
 				width: 25px;
 				height: 25px;
+
+				@include maxMQ(576px) {
+					width: 20px;
+					height: 20px;
+				}
 			}
 
 			img:first-child {
-				margin-top: 155px;
+				margin-top: 140px;
 
 				@include maxMQ($md-max-width) {
-					margin-top: 48px;;
+					margin-top: 50px;
 				}
+
+				@include maxMQ(576px) {
+					margin-top: 57px;
+				}
+
+
 			}
 
 			img:not(:first-child) {
 				margin-top: 60px;
+
+				
 			}
 
 			
@@ -203,6 +215,237 @@
 
 	}
 }
+
+.multiple-platforms {
+
+	.main-row {
+		position: relative;
+	}
+
+	.picture-col {
+
+		background: url(../../images/home/platforms.jpg) no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		position: relative;
+		overflow: hidden;
+		padding: 0;
+		margin:0;
+		height: 100vh;
+
+		.row {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width:100%;
+			margin:0;
+			margin-top: 100px;
+		}
+
+		.text-col {
+			h3 {
+				color: #fff;
+				width: 80%;
+				
+			}
+
+			p {
+				color: #fff;
+				width: 80%;
+				font-size: 16px;
+			}
+		}
+
+		.icons-col {
+
+			margin-top: 15px;
+			text-align: center;
+
+			.platform-container {
+				display: inline-block;
+			}
+
+
+
+			.platform-icon {
+				width: 66px;
+				height: 66px;
+				border-radius: 33px;
+				border: 2px solid #fff;
+				float: left;
+				margin: 0;
+				padding: 0;
+
+				&:hover {
+					width: 80px;
+					height: 80px;
+					background: #999;
+					border-radius: 40px;
+					margin-top: -7px;
+					cursor: pointer;
+
+					img {
+
+						margin-top: 15px;
+						width: 37px;
+						height: 45px;
+
+					}
+				}
+
+				img {
+					margin-top: 12px;
+					width: 33px;
+					height: 40px;
+				}
+			}
+
+			
+
+
+
+			.platform-line {
+				margin: 0;
+				width: 66px;
+				height: 34px;
+				border-bottom: 2px solid #fff;
+				float: left;
+			}
+		}
+	}
+
+	.accounts-col {
+		position: absolute;
+		top: 62%;
+		left:0;
+		padding-right: 80px;
+	}
+
+	.account-card-col {
+		
+		//background: #333;
+	}
+
+	.account-card {
+
+		box-shadow: 0px 5px 3px -3px #eee;
+		border: 2px solid #eee;
+		background: #fff;
+
+		.account-banner {
+			height: 50px;
+			background: #333;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				display: inline-block;
+				border-top: 30px solid #333;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+				left: calc(50% - 30px);
+				top: 100%;
+				z-index: 1;
+
+			}
+		}
+
+		.account-type {
+			background: #fff;
+			text-align: center;
+			padding: 10px 0;
+			border-bottom: 2px solid #eee;
+
+			h1{
+				font-size: 40px;
+				color: #666;
+				margin: 0;
+				margin-top: 20px;
+			}
+
+			h2{
+				font-size: 50px;
+				color: #666;
+				margin: 0;
+			}
+
+		}
+
+		.account-details {
+			p {
+				font-size: 16px;
+				color: #333;
+			}
+		}
+
+		.account-register {
+			text-align: center;
+			margin-top: 70px;
+			margin-bottom: 20px;
+
+			.register-btn {
+				display: block;
+				margin:auto;
+				width: 70%;
+				height: 35px;
+				background: transparent;
+				border: 1px solid #333;
+				font-size: 22px;
+				color: #333;
+				border: 1px solid #333;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: none;
+					cursor: pointer;
+					background: #eee;
+				}
+			}
+		}
+	}
+}
+
+.bank-logos {
+	margin-top: 550px;
+
+	div {
+		text-align: center;
+	}
+}
+
+.footer {
+	background: $footer-dark-grey;
+
+	div {
+		text-align: center;
+	}
+
+	p {
+		color: #fff;
+		font-size: 16px;
+		text-align: left;
+	}
+
+	.footer-logo {
+		margin-top: 50px;
+	}
+
+	.footer-first {
+		padding-top:45px;
+		padding-bottom: 5px;
+		border-bottom: 3px solid #e5bc0a;
+	}
+
+	.footer-second {
+		padding-bottom: 50px;
+	}
+}
+
+
 
 
 

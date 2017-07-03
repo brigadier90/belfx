@@ -74,7 +74,7 @@ ul {
     top: 67px;
     left: 0;
     margin: 0;
-    z-index: 1; }
+    z-index: 2; }
     .main-menu .bottom-nav-bar .menu-items-list-container {
       display: block; }
       @media screen and (max-width: 991px) {

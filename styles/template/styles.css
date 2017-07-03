@@ -1,14 +1,6 @@
-.fxmarkets-container {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
 .fxmarkets {
   background: #333;
-  height: 600px;
-  width: 100%;
-  padding: 0;
-  margin: 0; }
+  height: 600px; }
   @media screen and (max-width: 991px) {
     .fxmarkets {
       height: 750px; } }
@@ -42,93 +34,247 @@
       color: #fff; }
 
 .superior-trading {
-  background: #4d4d4d;
-  height: 480px;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+  background: #4d4d4d; }
   @media screen and (max-width: 991px) {
-    .superior-trading {
-      height: 700px; } }
-  .superior-trading .main-row {
-    height: 100%; }
-  .superior-trading .left-column {
-    height: 100%; }
+    .superior-trading .left-column {
+      text-align: center; } }
+  .superior-trading .left-column h1 {
+    margin-left: 30px;
+    margin-top: 140px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400; }
     @media screen and (max-width: 991px) {
-      .superior-trading .left-column {
-        height: 50%;
-        text-align: center; } }
-    .superior-trading .left-column h1 {
-      margin-left: 40px;
-      margin-right: 60px;
-      margin-top: 160px;
-      color: #fff;
-      font-size: 24px;
-      font-weight: 400;
-      display: inline-block; }
-      @media screen and (max-width: 991px) {
-        .superior-trading .left-column h1 {
-          display: inline-block;
-          margin-right: auto;
-          margin-left: auto;
-          margin-top: 100px;
-          text-align: center; } }
-    .superior-trading .left-column p {
-      margin-left: 40px;
-      margin-right: 60px;
-      margin-top: 5px;
-      color: #fff;
-      font-weight: 400; }
-      @media screen and (max-width: 991px) {
-        .superior-trading .left-column p {
-          text-align: center;
-          margin-left: 50px;
-          margin-right: 50px; } }
-  .superior-trading .right-column {
-    height: 100%; }
-    @media screen and (max-width: 991px) {
-      .superior-trading .right-column {
-        height: 50%; } }
-    .superior-trading .right-column .right-column-row {
-      height: 100%; }
-    .superior-trading .right-column .right-column-row-column {
-      height: 100%;
-      padding: 0;
-      margin: 0; }
-      .superior-trading .right-column .right-column-row-column h1:first-of-type {
-        margin-top: 157px; }
-        @media screen and (max-width: 991px) {
-          .superior-trading .right-column .right-column-row-column h1:first-of-type {
-            margin-top: 52px; } }
-      .superior-trading .right-column .right-column-row-column h1 {
-        color: #fff;
-        font-size: 15px;
-        width: 70%;
-        font-weight: 500;
-        margin-left: 30%;
-        margin-top: 63px; }
-    .superior-trading .right-column .icons-column {
-      display: inline-block;
-      width: 60px;
-      height: 100%;
-      margin-left: 0;
-      background: #dbdbdb;
-      float: left; }
-      @media screen and (max-width: 991px) {
-        .superior-trading .right-column .icons-column {
-          width: 50px; } }
-      .superior-trading .right-column .icons-column img {
+      .superior-trading .left-column h1 {
         margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 25px;
-        height: 25px; }
-      .superior-trading .right-column .icons-column img:first-child {
-        margin-top: 155px; }
-        @media screen and (max-width: 991px) {
-          .superior-trading .right-column .icons-column img:first-child {
-            margin-top: 48px; } }
-      .superior-trading .right-column .icons-column img:not(:first-child) {
-        margin-top: 60px; }
+        text-align: center;
+        margin-top: 100px; } }
+  .superior-trading .left-column p {
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 140px;
+    color: #fff;
+    font-weight: 400;
+    width: 300px; }
+    @media screen and (max-width: 991px) {
+      .superior-trading .left-column p {
+        width: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-bottom: 100px; } }
+  .superior-trading .right-column .right-column-row-column {
+    padding: 0;
+    margin: 0; }
+    .superior-trading .right-column .right-column-row-column h1:first-of-type {
+      margin-top: 143px; }
+      @media screen and (max-width: 991px) {
+        .superior-trading .right-column .right-column-row-column h1:first-of-type {
+          margin-top: 53px; } }
+      @media screen and (max-width: 576px) {
+        .superior-trading .right-column .right-column-row-column h1:first-of-type {
+          margin-top: 58px; } }
+      @media screen and (max-width: 400px) {
+        .superior-trading .right-column .right-column-row-column h1:first-of-type {
+          margin-top: 60px; } }
+    .superior-trading .right-column .right-column-row-column h1 {
+      color: #fff;
+      font-size: 15px;
+      width: 70%;
+      font-weight: 500;
+      margin-left: 30%;
+      margin-top: 63px; }
+      @media screen and (max-width: 576px) {
+        .superior-trading .right-column .right-column-row-column h1 {
+          font-size: 13px;
+          width: 80%;
+          margin-left: 20%; } }
+      @media screen and (max-width: 576px) {
+        .superior-trading .right-column .right-column-row-column h1 {
+          margin-top: 61px; } }
+      @media screen and (max-width: 400px) {
+        .superior-trading .right-column .right-column-row-column h1 {
+          margin-top: 64px;
+          font-size: 12px;
+          font-weight: lighter;
+          width: 74%;
+          margin-left: 26%; } }
+  .superior-trading .right-column .icons-column {
+    display: inline-block;
+    width: 60px;
+    height: 410px;
+    margin-left: 0;
+    background: #dbdbdb;
+    float: left; }
+    @media screen and (max-width: 991px) {
+      .superior-trading .right-column .icons-column {
+        width: 50px;
+        height: 300px; } }
+    @media screen and (max-width: 576px) {
+      .superior-trading .right-column .icons-column {
+        width: 30px;
+        height: 300px; } }
+    .superior-trading .right-column .icons-column img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 25px;
+      height: 25px; }
+      @media screen and (max-width: 576px) {
+        .superior-trading .right-column .icons-column img {
+          width: 20px;
+          height: 20px; } }
+    .superior-trading .right-column .icons-column img:first-child {
+      margin-top: 140px; }
+      @media screen and (max-width: 991px) {
+        .superior-trading .right-column .icons-column img:first-child {
+          margin-top: 50px; } }
+      @media screen and (max-width: 576px) {
+        .superior-trading .right-column .icons-column img:first-child {
+          margin-top: 57px; } }
+    .superior-trading .right-column .icons-column img:not(:first-child) {
+      margin-top: 60px; }
+
+.multiple-platforms .main-row {
+  position: relative; }
+.multiple-platforms .picture-col {
+  background: url(../../images/home/platforms.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 100vh; }
+  .multiple-platforms .picture-col .row {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: 100px; }
+  .multiple-platforms .picture-col .text-col h3 {
+    color: #fff;
+    width: 80%; }
+  .multiple-platforms .picture-col .text-col p {
+    color: #fff;
+    width: 80%;
+    font-size: 16px; }
+  .multiple-platforms .picture-col .icons-col {
+    margin-top: 15px;
+    text-align: center; }
+    .multiple-platforms .picture-col .icons-col .platform-container {
+      display: inline-block; }
+    .multiple-platforms .picture-col .icons-col .platform-icon {
+      width: 66px;
+      height: 66px;
+      border-radius: 33px;
+      border: 2px solid #fff;
+      float: left;
+      margin: 0;
+      padding: 0; }
+      .multiple-platforms .picture-col .icons-col .platform-icon:hover {
+        width: 80px;
+        height: 80px;
+        background: #999;
+        border-radius: 40px;
+        margin-top: -7px;
+        cursor: pointer; }
+        .multiple-platforms .picture-col .icons-col .platform-icon:hover img {
+          margin-top: 15px;
+          width: 37px;
+          height: 45px; }
+      .multiple-platforms .picture-col .icons-col .platform-icon img {
+        margin-top: 12px;
+        width: 33px;
+        height: 40px; }
+    .multiple-platforms .picture-col .icons-col .platform-line {
+      margin: 0;
+      width: 66px;
+      height: 34px;
+      border-bottom: 2px solid #fff;
+      float: left; }
+.multiple-platforms .accounts-col {
+  position: absolute;
+  top: 62%;
+  left: 0;
+  padding-right: 80px; }
+.multiple-platforms .account-card {
+  box-shadow: 0px 5px 3px -3px #eee;
+  border: 2px solid #eee;
+  background: #fff; }
+  .multiple-platforms .account-card .account-banner {
+    height: 50px;
+    background: #333;
+    position: relative; }
+    .multiple-platforms .account-card .account-banner:after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      border-top: 30px solid #333;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      left: calc(50% - 30px);
+      top: 100%;
+      z-index: 1; }
+  .multiple-platforms .account-card .account-type {
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #eee; }
+    .multiple-platforms .account-card .account-type h1 {
+      font-size: 40px;
+      color: #666;
+      margin: 0;
+      margin-top: 20px; }
+    .multiple-platforms .account-card .account-type h2 {
+      font-size: 50px;
+      color: #666;
+      margin: 0; }
+  .multiple-platforms .account-card .account-details p {
+    font-size: 16px;
+    color: #333; }
+  .multiple-platforms .account-card .account-register {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px; }
+    .multiple-platforms .account-card .account-register .register-btn {
+      display: block;
+      margin: auto;
+      width: 70%;
+      height: 35px;
+      background: transparent;
+      border: 1px solid #333;
+      font-size: 22px;
+      color: #333;
+      border: 1px solid #333;
+      text-decoration: none; }
+      .multiple-platforms .account-card .account-register .register-btn:hover {
+        text-decoration: none;
+        cursor: pointer;
+        background: #eee; }
+
+.bank-logos {
+  margin-top: 550px; }
+  .bank-logos div {
+    text-align: center; }
+
+.footer {
+  background: #4d4d4d; }
+  .footer div {
+    text-align: center; }
+  .footer p {
+    color: #fff;
+    font-size: 16px;
+    text-align: left; }
+  .footer .footer-logo {
+    margin-top: 50px; }
+  .footer .footer-first {
+    padding-top: 45px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #e5bc0a; }
+  .footer .footer-second {
+    padding-bottom: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
